@@ -1,4 +1,4 @@
-#!/bin/sh
-for i in `awk {'print $1'} list.txt`; do
-	ping.sh $i
-done
+127.0.0.1	# localhost
+192.168.88.1	# router
+8.8.8.8	# google
+ya.ru		# ya.ru
