@@ -1,4 +1,5 @@
-127.0.0.1	# localhost
-192.168.88.1	# router
-8.8.8.8	# google
-ya.ru		# ya.ru
+#!/bin/sh
+DIR=/usr/local/sbin
+for i in `awk {'print $1'} $DIR/pinglist.txt`; do
+	$DIR/ping.sh $i
+done
